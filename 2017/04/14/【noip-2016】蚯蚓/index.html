@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>【noip 2016】蚯蚓 | almzsyp</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="精通爆零的蒟蒻">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="【noip 2016】蚯蚓 | almzsyp">
+    <meta name="twitter:description" content="精通爆零的蒟蒻">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="【noip 2016】蚯蚓 | almzsyp">
+    <meta property="og:description" content="精通爆零的蒟蒻">
+
+    
+    <meta name="author" content="almzsyp">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="almzsyp" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://almzsyp.pw/2017/04/14/【noip-2016】蚯蚓/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 almzsyp 的主页"><img src="/images/avatar.jpg" width="80" alt="almzsyp logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for almzsyp">almzsyp</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">一个在OI界并不出名的蒟蒻</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">无穷的远方，无数的人，都与我无关</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="/about">关于</a></li>
+            
+              <li class="navigation__item"><a href="/friendlinks">友链</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+  <li class="navigation__item">
+    <a href="http://t.qq.com/shenyupeng6329" title="我的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/shen20010109" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-04-14T13:35:36.000Z" class="post-list__meta--date date">2017-04-14</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/刷题录/">刷题录</a>
+ </span>
+      <span class="page-pv">
+      &nbsp;阅读&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">【noip 2016】蚯蚓</h1>
+  </header>
+
+  <section class="post">
+    <p>100分程序，写了2天+1小时<br><a href="https://www.luogu.org/problem/show?pid=2827#sub" target="_blank" rel="external">→题目在这里←</a><br>大神就是厉害……写的程序居然看都看不懂,还有就是cena上过了但是luogu上一直是恶心的TLE<br>首先是考虑p=0时，数组大小开到了<strong>1100000</strong>，然后就是WA，改成了9100000之后终于坑到50分，然后开始考虑p≠0，经过神犇程序的一番洗脑，终于发现<strong>p=0和p≠0的区别就是不等于的时候需要处理时加上长的那一部分，处理完之后再减去，输出时再加上</strong>，写完之后有一种能AC的感觉，但是评测的时候发现非常尴尬，居然没有AC，然后开始一句一句的对比，发现忘记<strong>初始化</strong>了……<br>que_0,que_1,que_2是要初始化的，初始化为最小值，终于AC了，很开心的交到洛谷上，结果才90，两个TLE，后来才知道long long很浪费时间，所以要减少long long的数量，就AC了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;algorithm&gt;</span><br><span class="line">#include &lt;cstring&gt;</span><br><span class="line">using std::sort;</span><br><span class="line">int head_0=1,head_1=1,head_2=1;</span><br><span class="line">int tail_0,tail_1,tail_2;</span><br><span class="line">long long que_0[9100000],que_1[9100000],que_2[9100000];</span><br><span class="line">long long n,m,q,u,v,t;</span><br><span class="line">int comp(long long ti,long long bi)</span><br><span class="line">&#123;</span><br><span class="line">	if(ti&gt;bi) return 1;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line">int max(long long a,long long b,long long c)</span><br><span class="line">&#123;</span><br><span class="line">	if(a&lt;b)</span><br><span class="line">		if(b&lt;c)</span><br><span class="line">		&#123;</span><br><span class="line">			head_2++;</span><br><span class="line">			return c;</span><br><span class="line">		&#125;</span><br><span class="line">		else</span><br><span class="line">		&#123;</span><br><span class="line">			head_1++;</span><br><span class="line">			return b;</span><br><span class="line">		&#125;</span><br><span class="line">	else</span><br><span class="line">		if(a&gt;c)</span><br><span class="line">		&#123;</span><br><span class="line">			head_0++;</span><br><span class="line">			return a;</span><br><span class="line">		&#125;</span><br><span class="line">		else</span><br><span class="line">		&#123;</span><br><span class="line">			head_2++;</span><br><span class="line">			return c;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	freopen(&quot;earthworm.in&quot;,&quot;r&quot;,stdin);</span><br><span class="line">	freopen(&quot;earthworm.ans&quot;,&quot;w&quot;,stdout); </span><br><span class="line">	cin&gt;&gt;n&gt;&gt;m&gt;&gt;q&gt;&gt;u&gt;&gt;v&gt;&gt;t;</span><br><span class="line">	memset(que_0,128,sizeof(que_0));</span><br><span class="line">	memset(que_1,128,sizeof(que_1));</span><br><span class="line">	memset(que_2,128,sizeof(que_2));</span><br><span class="line">	tail_0=n;</span><br><span class="line">	for(int i=1;i&lt;=n;i++)</span><br><span class="line">		scanf(&quot;%lld&quot;,&amp;que_0[i]);</span><br><span class="line">	sort(que_0+1,que_0+n+1,comp);</span><br><span class="line">	for(int i=1;i&lt;=m;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		long long x,x1,x2;</span><br><span class="line">		x=max(que_0[head_0],que_1[head_1],que_2[head_2]);</span><br><span class="line">		x+=(i-1)*q;</span><br><span class="line">		que_1[i]=x*u/v-i*q;             //减去这段时间增长的部分</span><br><span class="line">		que_2[i]=x-x*u/v-i*q;</span><br><span class="line">		if(i%t==0)</span><br><span class="line">			printf(&quot;%lld &quot;,x);</span><br><span class="line">	&#125;</span><br><span class="line">	printf(&quot;\n&quot;);</span><br><span class="line">	for(int i=1,x;i&lt;=n+m;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		x=max(que_0[head_0],que_1[head_1],que_2[head_2]);</span><br><span class="line">		if(i%t==0)	printf(&quot;%d &quot;,x+m*q);       //x+m*q 加上增长的部分</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/04/15/【杂文】自杀还是他杀/" title="【杂文】自杀还是他杀">【杂文】自杀还是他杀</a></h2>
+                <p class="excerpt">
+                
+                男子跳楼自杀经过九楼时刚巧被九楼窗口射出的子弹打死，是自杀还是他杀？1994年美国报界评出十大最离奇的新闻，其中一件新闻是这样的： 
+这一年的 3月23日，纽约警察总局的法医检查了一具尸体，得出结论：此人死于头部枪击。 
+死者名叫罗纳德奥普斯，从他留下的遗书中得知，他本来是想从一幢十层高的楼的顶部跳
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2017-04-15T05:52:04.000Z" class="post-list__meta--date date">2017-04-15</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/杂论/">杂论</a>
+</span><a class="btn-border-small" href="/2017/04/15/【杂文】自杀还是他杀/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/04/08/【USACO】杂务/" title="【USACO】杂务">【USACO】杂务</a></h2>
+                <p class="excerpt">
+                
+                （翻译来自洛谷）
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2017-04-08T09:09:38.000Z" class="post-list__meta--date date">2017-04-08</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/刷题录/">刷题录</a>
+</span><a class="btn-border-small" href="/2017/04/08/【USACO】杂务/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'almzsyp'; 
+      
+  var disqus_identifier = '/2017/04/14/【noip-2016】蚯蚓/';
+  var disqus_title = '【noip 2016】蚯蚓';
+  var disqus_url = 'http://almzsyp.pw/2017/04/14/【noip-2016】蚯蚓/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        基于 <a href="http://hexo.io">Hexo</a> 搭建，感谢 <a href="https://pages.github.com/">GitHub Pages</a> 提供免费的托管服务
+    </span>
+    <span class="footer__copyright">
+        &copy; 2017 - 本站使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题,
+        由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+    </span>
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+    
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
